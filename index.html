@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Responsive Image Gallery</h1>
+
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+  </div>
+
+  <div class="gallery">
+    <img src="C:\internship project1\Gallery\Images\nature1.jpeg" class="gallery-item nature" alt="Nature">
+    <img src="C:\internship project1\Gallery\Images\city1.jpeg" class="gallery-item city" alt="City">
+    <img src="C:\internship project1\Gallery\Images\nature2.jpeg" class="gallery-item nature" alt="Nature">
+    <img src="C:\internship project1\Gallery\Images\city2.jpeg" class="gallery-item city" alt="City">
+    <img src="C:\internship project1\Gallery\Images\nature3.jpeg" class="gallery-item nature" alt="Nature">
+    <img src="C:\internship project1\Gallery\Images\city3.jpeg" class="gallery-item city" alt="City">
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="Lightbox View">
+    <div class="nav">
+      <button onclick="prevImage()">❮</button>
+      <button onclick="nextImage()">❯</button>
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+</html>
